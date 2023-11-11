@@ -16,14 +16,20 @@
             <a class="header__logo" href="index.html">
                 <img src="./ASSETS/IMG/logo-main.jpeg" alt="Logo principal SILOE">
             </a>
-            <h2>Moda, calidad y estilo para tu mejor amigo</h2>
+            <h2 class="header__subtittle">Moda, calidad y estilo para tu mejor amigo</h2>
         </div>
 
-        <nav>
+        <img id="menu-open" class="header__icon" src="./ASSETS/IMG/menu.svg" alt="Icon open menu for responsive">
+
+        <nav class="header__nav" id="nav-menu">
+            <img class="header__icon header__icon--close" id="menu-close" src="./ASSETS/IMG/close-menu.svg"
+                alt="Close icon for responsive menu">
+
             <ul class="header__menu">
                 <li> <a class="header__link" href="./index.html">Inicio</a></li>
                 <li> <a class="header__link" href="./ASSETS/VIEWS/products.html">Productos</a></li>
-                <li> <a class="header__link header__link--button" href="./ASSETS/VIEWS/login.html">Iniciar sesion</a></li>
+                <li> <a class="header__link header__link--button" href="./ASSETS/VIEWS/login.html">Iniciar sesion</a>
+                </li>
             </ul>
         </nav>
 
@@ -36,6 +42,8 @@
     <footer>
 
     </footer>
+
+    <script src="./ASSETS/JS/index.js" defer></script>
 </body>
 
 </html>
