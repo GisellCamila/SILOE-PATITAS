@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SILOE Patitas</title>
+    <link rel="shortcut icon" href="../IMG/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/index.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__brand">
+            <a class="header__logo" href="index.html">
+                <img src="../../ASSETS/IMG/logo-main.jpeg" alt="Logo principal SILOE">
+            </a>
+            <h2 class="header__subtittle">Moda, calidad y estilo para tu mejor amigo</h2>
+        </div>
+
+        <img id="menu-open" class="header__icon" src="../..//ASSETS/IMG/menu.svg" alt="Icon open menu for responsive">
+
+        <nav class="header__nav" id="nav-menu">
+            <img class="header__icon header__icon--close" id="menu-close" src="../../ASSETS/IMG/close-menu.svg"
+                alt="Close icon for responsive menu">
+
+            <ul class="header__menu">
+                <li> <a class="header__link" href="../../index.html">Inicio</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="welcome-content">
+        <div class="login">
+            <div class="login__container">
+                <fieldset class="login__form">
+                    <h1 id="tittle" class="login__tittle">Inicia sesion</h1>
+                    <form>
+                        <div class="login__group">
+                            <div class="login__input">
+                                <img class="login__icon" src="../IMG/user.svg">
+                                <input type="text" placeholder="nombre" required>
+                            </div>
+                            <div class="login__input">
+                                <img class="login__icon" src="../IMG/lock.svg">
+                                <input type="password" placeholder="contraseña" required>
+                            </div>
+                        </div>
+
+                        <button class="login__button" id="button-signup" type="submit">Iniciar sesion</button>
+
+                    </form>
+                </fieldset>
+                <div class="signup">
+                    <div>
+                        <p>¿Aun no tienes una cuenta SILOE?</p>
+                    </div>
+                    <div>
+                        <a href="./sign-up.html"><button>¡Unete ahora! <img src="../IMG/arrow-right-double.svg"></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="../JS/index.js" defer></script>
+</body>
+
+</html>
