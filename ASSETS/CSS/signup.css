@@ -168,3 +168,105 @@
     color: #6e6e6e;
     transition: 0.3s;
 }
+
+@media screen and (width <=790px) {
+    .signup__container {
+        margin: 10px;
+        width: 700px;
+        height: 350px;
+    }
+
+    .signup__container--right button {
+        margin-top: 0;
+    }
+}
+
+@media screen and (width <=730px) {
+    .signup__container {
+        margin: 10px;
+        width: 650px;
+    }
+
+    .signup__container--left button {
+        margin-top: 45px;
+    }
+}
+
+@media screen and (width <=690px) {
+    .signup__container {
+        width: 600px;
+        height: 370px;
+    }
+
+    .signup__container--left button {
+        margin-top: 10px;
+    }
+
+    .signup__container--right h1 {
+        font-size: 25px;
+    }
+
+    .signup__container--left p {
+        font-size: 24px;
+        width: 200px;
+    }
+}
+
+@media screen and (width <=620px) {
+    .signup__container {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 600px;
+    }
+
+    .signup__container--left {
+        display: flex;
+        border-radius: 15px 15px 0 0;
+        height: 40%;
+        width: 100%;
+    }
+
+    .signup__container--right {
+        border-radius: 0 0 15px 15px;
+        height: 60%;
+        width: 100%;
+    }
+}
+
+@media screen and (width <=435px) {
+    .signup__container {
+        width: 350px;
+        height: 550px;
+    }
+
+    .signup__container--left {
+        height: 35%;
+    }
+
+    .signup__container--right {
+        height: 65%;
+    }
+
+    .signup__container--right h1 {
+        font-size: 20px;
+    }
+
+    .login__container--left p {
+        font-size: 19px;
+        width: 200px;
+    }
+
+    .signup__container--left button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (width <=370px) {
+    .signup__container {
+        width: 320px;
+        height: 520px;
+    }
+}
