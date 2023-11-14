@@ -35,30 +35,31 @@
     <main class="welcome-content">
         <div class="login">
             <div class="login__container">
-                <fieldset class="login__form">
-                    <h1 id="tittle" class="login__tittle">Inicia sesion</h1>
-                    <form>
-                        <div class="login__group">
-                            <div class="login__input">
-                                <img class="login__icon" src="../IMG/user.svg">
-                                <input type="text" placeholder="nombre" required>
-                            </div>
-                            <div class="login__input">
-                                <img class="login__icon" src="../IMG/lock.svg">
-                                <input type="password" placeholder="contraseña" required>
-                            </div>
+                <fieldset class="login__container--left">
+                    <h1 class="login__tittle">Inicio de sesion</h1>
+                    <form class="login__form">
+                        <div class="login__input">
+                            <img class="login__icon" src="../IMG/user.svg">
+                            <input name="Username" type="text" placeholder="Nombre" required>
                         </div>
-
+                        <div class="login__input">
+                            <img class="login__icon" src="../IMG/lock.svg">
+                            <input name="password" type="password" placeholder="Contraseña" required>
+                        </div>
                         <button class="login__button" id="button-signup" type="submit">Iniciar sesion</button>
-
                     </form>
                 </fieldset>
-                <div class="signup">
+
+                <div class="login__container--right">
                     <div>
                         <p>¿Aun no tienes una cuenta SILOE?</p>
                     </div>
                     <div>
-                        <a href="./sign-up.html"><button>¡Unete ahora! <img src="../IMG/arrow-right-double.svg"></button></a>
+                        <a href="./sign-up.html">
+                            <button>¡Unete ahora!
+                                <img src="../IMG/arrow-right-double.svg">
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
