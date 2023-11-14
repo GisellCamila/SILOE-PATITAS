@@ -2,6 +2,7 @@
 @import './welcome-content.css';
 @import './login.css';
 @import './signup.css';
+@import './admin.css';
 
 * {
     padding: 0;

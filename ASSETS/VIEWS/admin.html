@@ -27,14 +27,50 @@
 
             <ul class="header__menu">
                 <li> <a class="header__link" href="../../index.html">Inicio</a></li>
-                <li> <a class="header__link header__link--button" id="logout-button" href="../VIEWS/login.html">Cerrar sesion</a>
+                <li> <a class="header__link header__link--button" id="logout-button" href="../VIEWS/login.html">Cerrar
+                        sesion</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="welcome-content">
+    <main class="welcome-content admin-main">
+        <section class="admin-product-container">
+            <form class="admin-product-container__form">
+                <h2 class="admin-product-container__tittle">Crear producto</h2>
+                <div class="admin-product-container--top">
+                    <fieldset class="admin-product-container__formSection--1">
+                        <div class="admin-product-container__formSection--1-input">
+                            <label for="nameProduct">Nombre: </label>
+                            <input id="nameProduct" type="text" placeholder="Ingresa el nombre para tu producto"
+                                required>
+                        </div>
 
+                        <div class="admin-product-container__formSection--1-input">
+                            <label for="price">Precio: </label>
+                            <input id="price" type="number" required name="price" placeholder="Ingresa el precio">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="admin-product-container__formSection--2">
+                        <div class="admin-product-container__formSection--2-input">
+                            <label for="productImage">Fotos:</label>
+                            <input id="productImage" type="image">
+                        </div>
+                    </fieldset>
+                </div>
+
+                <fieldset class="admin-product-container__formSection--3">
+                    <div class="admin-product-container__formSection--3-input">
+                        <label for="description">Descripción: </label>
+                        <textarea id="description" cols="30" rows="10" required>
+                        </textarea>
+                    </div>
+                    <button class="admin__button" type="submit">Crear</button>
+                </fieldset>
+            </form>
+
+        </section>
     </main>
 
     <footer>
