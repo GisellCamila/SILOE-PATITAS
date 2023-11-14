@@ -8,9 +8,10 @@ if (formLogin) {
 
     // Username: Gisell; password: admin12345 //
 
-    if (Username === 'admin@gmail.com' && password === 'admin12345') {
+    if (Username === 'Gisell' && password === 'admin12345') {
       localStorage.setItem('HAS_USER', 'true')
       window.location = '../VIEWS/admin.html'
+      location = '../VIEWS/admin.html'
     }
   })
 }

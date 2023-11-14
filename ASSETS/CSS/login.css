@@ -3,11 +3,12 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
 }
 
 .login__container {
     position: absolute;
-    display: flex; 
+    display: flex;
     width: 750px;
     height: 400px;
     box-shadow: 0px 0px 63px 8px rgba(110, 110, 110, 0.77);
@@ -17,7 +18,7 @@
 
 .login__container--left {
     width: 50%;
-    /* border: solid 0.7px #fff; */
+    border: solid 0.7px #fff;
     border-radius: 15px 0 0 15px;
     backdrop-filter: blur(40px);
     color: #fff;
@@ -102,6 +103,7 @@
     font-size: 30px;
     text-shadow: 6px 8px 6px rgba(255, 255, 255, 0.6);
 }
+
 .login__container--right a {
     text-decoration: none;
 }
@@ -133,4 +135,128 @@
     color: #fff;
     transform: translateX(8px);
     transition: 0.3s;
+}
+
+@media screen and (width <=790px) {
+    .login__container {
+        margin: 10px;
+        width: 700px;
+        height: 350px;
+    }
+
+    .login__button {
+        margin-top: 95px;
+    }
+}
+
+@media screen and (width <=730px) {
+    .login__container {
+        margin: 10px;
+        width: 650px;
+        height: 300px;
+    }
+
+    .login__button {
+        margin-top: 45px;
+    }
+
+    .login__container--right button {
+        margin-top: 118px;
+    }
+}
+
+@media screen and (width <=690px) {
+    .login__container {
+        margin: 10px;
+        width: 600px;
+        height: 250px;
+    }
+
+    .login__button {
+        margin-top: 10px;
+    }
+
+    .login__container--right button {
+        margin-top: 65px;
+    }
+
+    .login__tittle {
+        font-size: 25px;
+    }
+
+    .login__container--right p {
+        font-size: 24px;
+        width: 200px;
+    }
+}
+
+@media screen and (width <=620px) {
+    .login__container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 500px;
+    }
+
+    .login__container--left {
+        border-radius: 15px 15px 0 0;
+        height: 50%;
+        width: 100%;
+    }
+
+    .login__container--right {
+        border-radius: 0 0 15px 15px;
+        height: 50%;
+        width: 100%;
+    }
+}
+
+@media screen and (width <=435px) {
+    .login__container {
+        width: 350px;
+        height: 450px;
+    }
+
+    .login__tittle {
+        font-size: 20px;
+    }
+
+    .login__container--right p {
+        font-size: 19px;
+        width: 200px;
+    }
+
+    .login__container--left {
+        height: 55%;
+    }
+
+    .login__container--right {
+        height: 45%;
+    }
+
+    .login__container--right button {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (width <=370px) {
+    .login__container {
+        width: 320px;
+        height: 420px;
+    }
+
+    .login__container--left {
+        height: 60%;
+    }
+
+    .login__container--right {
+        height: 40%;
+    }
+
+    .login__container--right button {
+        margin-top: 0;
+    }
 }
