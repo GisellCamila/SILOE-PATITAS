@@ -22,7 +22,7 @@
     border-radius: 15px 0 0 15px;
     backdrop-filter: blur(40px);
     color: #fff;
-    padding: 30px;
+    padding: 20px;
 }
 
 .login__tittle {
@@ -35,7 +35,7 @@
     flex-direction: column;
     margin-left: 10px;
     gap: 10px;
-    margin-top: 30px;
+    margin-top: 12px;
     align-items: start;
 }
 
@@ -63,7 +63,7 @@
 .login__button {
     border: none;
     outline: none;
-    margin-top: 120px;
+    margin-top: 90px;
     padding: 10px 15px;
     border: solid 0.4px #fff;
     border-radius: 10px;
@@ -143,10 +143,6 @@
         width: 700px;
         height: 350px;
     }
-
-    .login__button {
-        margin-top: 95px;
-    }
 }
 
 @media screen and (width <=730px) {
@@ -157,7 +153,7 @@
     }
 
     .login__button {
-        margin-top: 45px;
+        margin-top: 2px;
     }
 
     .login__container--right button {
@@ -170,10 +166,6 @@
         margin: 10px;
         width: 600px;
         height: 250px;
-    }
-
-    .login__button {
-        margin-top: 10px;
     }
 
     .login__container--right button {

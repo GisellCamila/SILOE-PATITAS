@@ -29,14 +29,18 @@
 
                 <fieldset class="signup__container--right">
                     <h1 class="signup-tittle">Registro</h1>
-                    <form class="signup__form">
+                    <form class="signup__form" id="signup__form">
                         <div class="signup__input">
                             <img class="signup__icon" src="../IMG/user.svg">
-                            <input type="text" placeholder="Nombre" required>
+                            <input type="text" placeholder="Nombre" id="username" required>
                         </div>
                         <div class="signup__input">
                             <img class="signup__icon" src="../IMG/lock.svg">
-                            <input type="password" placeholder="Contraseña" required>
+                            <input type="password" placeholder="Contraseña" id="password" required>
+                        </div>
+                        <div class="signup__input">
+                            <img class="signup__icon" src="../IMG/mail.svg">
+                            <input type="email" placeholder="E-mail" id="email" required>
                         </div>
                         <p class="signup__subtittle">Selecciona tu genero porfavor:</p>
                         <div class="signup__radio">
@@ -59,13 +63,14 @@
                                 </label>
                             </div>
                         </div>
-                        <button class="signup__button">¡Unete ahora!</button>
+                        <input type="submit" class="signup__button" value="Registrarme">
                     </form>
                 </fieldset>
             </div>
         </div>
     </main>
     <script src="../JS/index.js" defer></script>
+    <script src="../JS/signup.js"></script>
 </body>
 
 </html>
