@@ -21,7 +21,7 @@ if (formLogin) {
 }
 //#endregion
 
-//#region 
+//#region INICIO DE SESION(INGRESO PARA USUARIOS YA REGISTRADOS)
 const loginForm = document.querySelector('#login-form')
 loginForm.addEventListener('submit', (event) => {
   event.preventDefault()
@@ -34,8 +34,11 @@ loginForm.addEventListener('submit', (event) => {
   if(!validUser){
     return alert('Usuario y/o contraseña incorrectos!')
   }
+
+// falta hacer saludo personalizado dependiendo el genero del usuario.-------------------
   alert(`Bienvenid@ ${validUser.username}`)
-  window.location.href = '../../index.html'
+  localStorage.setItem('login_success', JSON.stringify(validUser))
+  window.location.href = '../VIEWS/products.html'
 
 })
 
