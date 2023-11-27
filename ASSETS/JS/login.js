@@ -14,8 +14,7 @@ if (formLogin) {
 
     if (username === 'Gisell' && password === 'admin12345' && email === 'gisellortiz871@gmail.com') {
       localStorage.setItem('HAS_USER', 'true')
-      window.location = '../VIEWS/admin.html'
-      location = '../VIEWS/admin.html'
+      window.location.href = '../VIEWS/admin.html'
     }
   })
 }

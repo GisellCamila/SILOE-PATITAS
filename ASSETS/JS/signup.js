@@ -1,5 +1,11 @@
 
 //#region JS PARA REGISTRAR USUARIOS Y GUARDARLOS EN EL LOCAL STORAGE, TAMBIEN PARA COMPROBAR QUE NO EXISTA OTRO USUARIO CON EL MISMO CORREO
+
+
+
+
+
+
 const signupform = document.querySelector('#signup__form')
 signupform.addEventListener('submit', (event) => {
     event.preventDefault()

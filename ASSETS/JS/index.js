@@ -2,6 +2,7 @@ const header = document.getElementById('header')
 const menuOpen = document.getElementById('menu-open')
 const menuClose = document.getElementById('menu-close')
 const navMenu = document.getElementById('nav-menu')
+const LogOutButton = document.getElementById('enter')
 
 //#region Menu responsive
 if (menuOpen) {
@@ -17,10 +18,17 @@ if (menuClose) {
 
 //#endregion
 
-//#region
-// const user = JSON.parse(localStorage.getItem('login_success')) || false
-// if(!user){
-//   window.location.href = '../VIEWS/login.html'
-// } 
+//#region Cambiar boton de inicio de sesion a "Cerrar sesion"
+if (localStorage.getItem('login_success')) {
+  LogOutButton.textContent ="Cerrar sesion";
+}
+
+if (LogOutButton) {
+  addEventListener('click', () => {
+    localStorage.removeItem('login_success');
+  })
+}
+
+
 //#endregion
 
