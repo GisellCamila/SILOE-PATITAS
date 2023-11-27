@@ -28,7 +28,5 @@ if (LogOutButton) {
     localStorage.removeItem('login_success');
   })
 }
-
-
 //#endregion
 

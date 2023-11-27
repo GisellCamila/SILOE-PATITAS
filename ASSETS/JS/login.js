@@ -27,6 +27,7 @@ loginForm.addEventListener('submit', (event) => {
   const username = document.querySelector('#username').value
   const password = document.querySelector('#password').value
   const email = document.querySelector('#email').value
+
   const Users= JSON.parse(localStorage.getItem('users')) || []
   const validUser = Users.find(user => user.username === username && user.password === password && user.email === email)
 
