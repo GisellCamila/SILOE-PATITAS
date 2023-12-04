@@ -8,7 +8,6 @@ signupform.addEventListener('submit', (event) => {
     const password = document.querySelector('#password').value
     const email = document.querySelector('#email').value
     let genero = document.querySelector('input[name="inputgenero"]:checked').value
-    // Falta obtener el valor del input para seleccionar el genero
 
     const Users = JSON.parse(localStorage.getItem('users')) || []
     const isEmailRegistered = Users.find(user => user.email === email)
@@ -17,7 +16,6 @@ signupform.addEventListener('submit', (event) => {
     }
 
     Users.push({username: username, password: password, email: email, genero: genero})
-    // Falta recibir el valor del input degenero y guardarlo en el local storege junto con los otros datos del usuario
     localStorage.setItem('users', JSON.stringify(Users))
     alert('Registro exitoso!!')
     window.location.href = '../VIEWS/login.html'
