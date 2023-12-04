@@ -4,6 +4,7 @@
 @import './signup.css';
 @import './admin.css';
 @import './products.css';
+@import './footer.css';
 
 * {
     padding: 0;
